@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+		<title>Frontend Mentor | Results summary component</title>
+		<link rel="stylesheet" href="./css/style.css" type="text/css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<main>
+			<div class="flex">
+				<div class="flex_result">
+					<h4>Your Result</h4>
+					<div class="circle">
+						<span class="circle_result"> 76 </span>
+						<span class="circle_summary"> of 100</span>
+					</div>
+					<h2>Great</h2>
+					<p class="text">You scored higher than 65% of the people who have taken these tests.</p>
+				</div>
+				<div class="flex_summary">
+					<h4>Summary</h4>
+					<ul>
+						<li class="reaction">
+							<img src="./assets/images/icon-reaction.svg" alt="#" />
+							<span class="reaction_text">Reaction</span>
+							<span class="reaction_summary">
+								<span class="one">80 </span>
+								<span class="two">/100</span>
+							</span>
+						</li>
+						<li class="memory">
+							<img src="./assets/images/icon-memory.svg" alt="#" />
+							<span class="memory_text">Memory</span>
+							<span class="memory_summary"> 
+								<span class="one">92 </span>
+								<span class="two">/100</span>
+							</span>
+						</li>
+						<li class="verbal">
+							<img src="./assets/images/icon-verbal.svg" alt="#" />
+							<span class="verbal_text">Verbal</span>
+							<span class="verbal_summary">
+								<span class="one">61</span>
+								<span class="two">/100</span>
+							</span>
+						</li>
+						<li class="visual">
+							<img src="./assets/images/icon-visual.svg" alt="#" />
+							<span class="visual_text">Visual</span>
+							<span class="visual_summary">
+								<span class="one">72 </span>
+								<span class="two">/100</span>
+							</span>
+						</li>
+					</ul>
+					<input type="submit" value="Continue" />
+				</div>
+			</div>
+		</main>
+
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+			<a href="#">Your Name Here</a>.
+		</div>
+	</body>
+</html>

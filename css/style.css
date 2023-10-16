@@ -1,0 +1,272 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-size: 18px;
+  font-family: "Hanken Grotesk";
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  height: 420px;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 20px 20px 20px 10px hsl(221, 100%, 96%);
+  border-radius: 25px;
+}
+
+.flex_result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+  width: 300px;
+  text-align: center;
+  border-radius: 25px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+h4 {
+  font-weight: 400;
+  color: hsl(241, 100%, 89%);
+  padding: 10px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.circle_result {
+  font-size: 47px;
+  font-weight: 800;
+  color: hsl(221, 100%, 96%);
+}
+
+.circle_summary {
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(221, 100%, 96%);
+}
+
+h2 {
+  font-weight: 700;
+  color: hsl(221, 100%, 96%);
+  padding: 20px;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+  padding: 0 40px 15px;
+}
+
+.flex_summary {
+  height: 420px;
+  width: 300px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  background-clip: padding-box hsl(243, 66%, 6%);
+  border-style: none;
+}
+
+.flex_summary > h4 {
+  padding-top: 20px;
+  color: hsl(224, 30%, 27%);
+}
+
+ul {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+ul > li {
+  display: block;
+  padding: 10px 5px;
+  border-radius: 10px;
+}
+
+.reaction {
+  display: flex;
+  color: hsl(0, 100%, 67%);
+  background: hsla(0, 100%, 67%, 0.1);
+}
+
+li > .reaction_summary {
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+li > .reaction_text {
+  padding: 0 15px;
+}
+
+li > .memory_summary {
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+li > .memory_text {
+  padding: 0 15px;
+}
+
+li > .verbal_summary {
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+li > .verbal_text {
+  padding: 0 15px;
+}
+
+li > .visual_summary {
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+li > .visual_text {
+  padding: 0 15px;
+}
+
+.one {
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+.two {
+  font-weight: 500;
+  color: hsl(224, 30%, 27%);
+}
+
+.memory {
+  display: flex;
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.verbal {
+  display: flex;
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual {
+  display: flex;
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+input {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  margin-top: 50px;
+  border-radius: 25px;
+  border-style: none;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  background: hsla(241, 81%, 54%, 0.8);
+}
+
+a {
+  text-decoration: none;
+}
+
+input:hover {
+  background-color: hsl(224, 30%, 27%);
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 576px) {
+  body {
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+  }
+  .flex {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: none;
+    background-color: #fff;
+  }
+  .flex_result {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .flex_summary > h4 {
+    padding: 0;
+  }
+  .flex_summary {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .attribution {
+    display: inline-block;
+    position: relative;
+    bottom: 1%;
+    color: #fff;
+  }
+}/*# sourceMappingURL=style.css.map */
